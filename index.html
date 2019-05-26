@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="How Israeli are you?">
+    <meta name="author" content="Jonatan Kruszewski">
+
+    <title>How Israeli are you?</title>
+    <link rel="Icon" href="./img/falafel.png">
+
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--BOOTSTRAP 4-->
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- styles -->
+    <link href="./css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="functionfadein" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="row bg-secondary fixed-top text-uppercase" id="mainNav">
+        <h1 class="text-center text-white padding-tb-10">A quizz to increase Hummus sales</h1>
+    </nav>
+
+    <!-- LANDING -->
+    <header class="bg-primary text-white wrapper-a">
+        <div class="wrapper-b">
+            <img src="img/hamsa256x256B.png" alt="Hamsa">
+            <h2 class="text-uppercase text-center text-white">How Israeli are you?</h2>
+            <h4 class="text-center text-uppercase text-white">Unleash the Sabra within</h4>
+            <a class="btn btn-sm btn-outline-light" href="#section1">
+                Let's Go!
+            </a>
+        </div>
+    </header>
+
+    <!-- Question 1 -->
+
+    <div class="container-flex" id="section1">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-secondary centered">
+            </div>
+        </div>
+        <div class="row d-flex h-100-120">
+            <div class="col-12 col-sm-6 d-flex bg-primary centered">
+                <h4 class="text-white">#1. You have just met someone new, the first thing you do is....
+                </h4>
+            </div>
+            <div class="col-12 col-sm-6 d-flex text-white answers bg-secondary centered">
+                <div class="d-block">
+                    <input type="radio" value="3" checked="checked" name="question1"> Invite them to play Matkot at Frishman Beach<br>
+                    <input type="radio" value="2" name="question1"> You smile while you don't understand why they say 'Achi' and 'Ma Kore' every 3 words<br>
+                    <input type="radio" value="1" name="question1">Give them a kiss, both cheeks, like in France<br>
+                    <input type="radio" value="4" name="question1">You invite them to have a Shabat dinner on friday
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex h-70px centered bg-secondary">
+            <a class=" btn btn-sm btn-outline-light" href="#section2" onclick="getQuestion1ans()">Next
+                Question</a>
+        </div>
+    </div>
+
+
+    <!-- Question 2 -->
+    <div class="container-flex" id="section2">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-secondary centered">
+            </div>
+        </div>
+        <div class="row d-flex h-100-120">
+            <div class="col-12 col-sm-6 d-flex bg-primary centered">
+                <h4 class="text-white">#2. You are waiting for the bus, and when the bus comes everybody pushes in to try to get first. You...
+                </h4>
+            </div>
+            <div class="col-12 col-sm-6 d-flex text-white answers bg-secondary centered">
+                <div class="centered">
+                    <input class="btn btn-sm btn-outline-light" type="button" id="button-q2-a" value="A. Push harder, I'm stronger" onclick="getQuestion2ans(this.id)" name="question2"><br>
+                    <input class="btn btn-sm btn-outline-light" type="button" id="button-q2-b" value="B. Let everybody in first" onclick="getQuestion2ans(this.id)" name="question2"><br>
+                    <input class="btn btn-sm btn-outline-light" type="button" id="button-q2-c" value="C. I use Bird, I'm Telavivi Habibi" onclick="getQuestion2ans(this.id)" name="question2"><br>
+                    <input class="btn btn-sm btn-outline-light" type="button" id="button-q2-d" value="D. I am taking a Gett" onclick="getQuestion2ans(this.id)" name="question2"><br>
+                    <div class=" btn-sm text-white" id="q2-ans"> Your choice: A</div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex h-70px centered bg-secondary">
+            <a class=" btn btn-sm btn-outline-light" href="#section3">Next
+                Question</a>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="container-flex" id="section3">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-secondary centered">
+            </div>
+        </div>
+        <div class="row d-flex h-100-120">
+            <div class="col-12 col-sm-6 d-flex bg-primary centered">
+                <h4 class="text-white">#3. Mark all the words that you say at list once a day: </h4>
+            </div>
+            <div class="col-12 col-sm-6 d-flex text-white answers bg-secondary centered">
+                <div class="d-block">
+                    <input type="checkbox" value="1" name="question3">Motek<br>
+                    <input type="checkbox" value="1" name="question3">Chaim Sheli<br>
+                    <input type="checkbox" value="1" name="question3">Neshama<br>
+                    <input type="checkbox" value="1" name="question3">Sababa<br>
+                </div>
+            </div>
+        </div>
+        <div class="row h-70px centered bg-secondary">
+            <a class="btn btn-sm btn-outline-light" href="#section4" onclick="getQuestion3ans()">Next
+                Question</a>
+        </div>
+    </div>
+
+
+    <!-- Question 4 -->
+    <div class="container-flex" id="section4">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-secondary centered">
+            </div>
+        </div>
+        <div class="row d-flex h-100-120">
+            <div class="col-12 col-sm-6 d-flex bg-primary centered">
+                <h4 class="text-white">#4. How do you drink your cofee?</h4>
+            </div>
+            <div class="col-12 col-sm-6 d-flex text-white answers bg-secondary ">
+                <div class="row centered">
+                    <div class="col-12">
+                        <select name="cofee" id="q4-ans">
+                            <option value="3">Spresso Aroch</option>
+                            <option value="1">Tea</option>
+                            <option value="4">Shachor uchazak mami</option>
+                            <option value="2">Capuccino extra latte</option>
+                        </select>
+                    </div>
+                    <div class="col-12 cofee">
+                        <img src="https://media.giphy.com/media/1oKjCzdnatyyMxkdxF/giphy.gif" alt="cofee" class="img rounded-circle ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-70px centered bg-secondary">
+            <a class="btn btn-sm btn-outline-light" href="#section5" onclick="getQuestion4ans()">Next
+                Question</a>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+
+
+    <div class="container-flex" id="section5">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-secondary centered">
+            </div>
+        </div>
+        <div class="row d-flex h-100-120 ">
+            <div class="col-12 col-sm-6 cofee bg-primary centered d-flex">
+                <img src="https://media.giphy.com/media/l4Ki8J3FuiXUJAt0s/giphy.gif" alt="hummus" class="img rounded-circle ">
+            </div>
+            <div class="col-12 col-sm-6 bg-primary colq-5 centered">
+                <h4 class="row centered text-white">
+                    #5. From 1 to 10, how much do love hummus?</h4>
+                <div class="row centered">
+                    <input type="number" name="quantity" min="1" max="10" value="1" id="q5-ans">
+                </div>
+            </div>
+        </div>
+        <div class="row h-70px centered bg-secondary">
+            <a class="btn btn-sm btn-outline-light" href="#section6" onclick="getQuestion5ans(); getAnswers()">Show
+                    My
+                    Result</a>
+        </div>
+    </div>
+
+
+
+    <!-- SECTION 6 -->
+    <div class="container-flex" id="section6">
+        <div class="row h-50px">
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+            <div class="col-xs-12 col-sm-6 d-flex bg-primary centered">
+            </div>
+        </div>
+        <div class="row d-flex centered h-100-120 bg-primary">
+            <div class="col-xs-8 d-flex centered">
+                <h4 class="text-white" id="result">IF YOU SEE THIS MESSAGE IT IS BECAUSE YOU ARE CHEATING MY FRIEND
+                </h4>
+            </div>
+        </div>
+        <div class="row h-70px centered bg-secondary">
+            <a class="btn btn-sm btn-outline-light" href="#page-top" onclick="resetAns()">Again?</a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="./js/quizz.js"></script>
+    <!--BOOTSTRAP JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP JAVASCRIPT-->
+
+</body>
+
+</html>
